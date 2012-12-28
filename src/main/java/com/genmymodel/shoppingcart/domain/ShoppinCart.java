@@ -2,11 +2,11 @@ package com.genmymodel.shoppingcart.domain;
 
 import java.util.Set;
 import java.util.List;
-import javax.persistence.Id;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.OneToOne;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 
 @Entity

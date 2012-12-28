@@ -1,9 +1,9 @@
 package com.genmymodel.shoppingcart.domain;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.ManyToOne;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 
 
 @Entity
