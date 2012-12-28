@@ -1,4 +1,3 @@
-
                           Spring Rest Data application by GenMyModel
 
   What is it?
@@ -20,7 +19,7 @@
   ------------------------------------
 
   The easiest way is to use Maven. From the root directory, run "mvn jetty:run"
-  and connect to http://localhost:8080. You can also import the content in 
+  and connect to http://localhost:9090. You can also import the content in 
   your favorite IDE to start a web project. 
  
  
