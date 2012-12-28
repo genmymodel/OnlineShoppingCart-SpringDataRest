@@ -1,10 +1,9 @@
 package com.genmymodel.shoppingcart.domain;
 
 import javax.persistence.Id;
-import javax.persistence.Column;
 import javax.persistence.OneToOne;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 
 
 @Entity
@@ -20,9 +19,6 @@ public class Customer
 	
 	
 	private String email;
-	
-	@Column(name = "IDCOLUMN")
-	private Long id;
 	
 	@Id
 	@GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
@@ -51,12 +47,6 @@ public class Customer
 	public String getEmail () 
 	{
 		return this.email;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -109,12 +99,6 @@ public class Customer
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setPhone (String myPhone) 
 	{
 		this.phone = myPhone;	
@@ -153,12 +137,6 @@ public class Customer
 	public void unsetEmail () 
 	{
 		this.email = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

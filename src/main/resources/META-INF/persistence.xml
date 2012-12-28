@@ -5,14 +5,14 @@
 
 	<persistence-unit name="Unit" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>com.genmymodel.shoppingcart.LineItem</class>
-		<class>com.genmymodel.shoppingcart.Customer</class>
 		<class>com.genmymodel.shoppingcart.Order</class>
-		<class>com.genmymodel.shoppingcart.ShoppinCart</class>
-		<class>com.genmymodel.shoppingcart.Account</class>
-		<class>com.genmymodel.shoppingcart.Product</class>
+		<class>com.genmymodel.shoppingcart.LineItem</class>
 		<class>com.genmymodel.shoppingcart.Payment</class>
+		<class>com.genmymodel.shoppingcart.Account</class>
+		<class>com.genmymodel.shoppingcart.Customer</class>
+		<class>com.genmymodel.shoppingcart.ShoppinCart</class>
 		<class>com.genmymodel.shoppingcart.WebUser</class>
+		<class>com.genmymodel.shoppingcart.Product</class>
 		
 		<properties>
 	      <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>

@@ -39,14 +39,14 @@
     What you put after that doesn't matter, you just need to make the bean name unique, of course.
   -->
   
-  <bean id="beforeSaveOrderValidator" class="com.genmymodel.shoppingcart.web.validator.OrderValidator"/>
-  <bean id="beforeSaveWebUserValidator" class="com.genmymodel.shoppingcart.web.validator.WebUserValidator"/>
-  <bean id="beforeSaveCustomerValidator" class="com.genmymodel.shoppingcart.web.validator.CustomerValidator"/>
   <bean id="beforeSaveProductValidator" class="com.genmymodel.shoppingcart.web.validator.ProductValidator"/>
+  <bean id="beforeSaveCustomerValidator" class="com.genmymodel.shoppingcart.web.validator.CustomerValidator"/>
   <bean id="beforeSaveShoppinCartValidator" class="com.genmymodel.shoppingcart.web.validator.ShoppinCartValidator"/>
   <bean id="beforeSavePaymentValidator" class="com.genmymodel.shoppingcart.web.validator.PaymentValidator"/>
   <bean id="beforeSaveAccountValidator" class="com.genmymodel.shoppingcart.web.validator.AccountValidator"/>
+  <bean id="beforeSaveOrderValidator" class="com.genmymodel.shoppingcart.web.validator.OrderValidator"/>
   <bean id="beforeSaveLineItemValidator" class="com.genmymodel.shoppingcart.web.validator.LineItemValidator"/>
+  <bean id="beforeSaveWebUserValidator" class="com.genmymodel.shoppingcart.web.validator.WebUserValidator"/>
   
 
   <!--
@@ -59,14 +59,14 @@
       <map>
         <entry key="beforeSave">
           <list>
-           	<bean id="beforeSaveOrderValidator" class="com.genmymodel.shoppingcart.web.validator.OrderValidator"/>
-           	<bean id="beforeSaveWebUserValidator" class="com.genmymodel.shoppingcart.web.validator.WebUserValidator"/>
-           	<bean id="beforeSaveCustomerValidator" class="com.genmymodel.shoppingcart.web.validator.CustomerValidator"/>
            	<bean id="beforeSaveProductValidator" class="com.genmymodel.shoppingcart.web.validator.ProductValidator"/>
+           	<bean id="beforeSaveCustomerValidator" class="com.genmymodel.shoppingcart.web.validator.CustomerValidator"/>
            	<bean id="beforeSaveShoppinCartValidator" class="com.genmymodel.shoppingcart.web.validator.ShoppinCartValidator"/>
            	<bean id="beforeSavePaymentValidator" class="com.genmymodel.shoppingcart.web.validator.PaymentValidator"/>
            	<bean id="beforeSaveAccountValidator" class="com.genmymodel.shoppingcart.web.validator.AccountValidator"/>
+           	<bean id="beforeSaveOrderValidator" class="com.genmymodel.shoppingcart.web.validator.OrderValidator"/>
            	<bean id="beforeSaveLineItemValidator" class="com.genmymodel.shoppingcart.web.validator.LineItemValidator"/>
+           	<bean id="beforeSaveWebUserValidator" class="com.genmymodel.shoppingcart.web.validator.WebUserValidator"/>
            	
           </list>
         </entry>

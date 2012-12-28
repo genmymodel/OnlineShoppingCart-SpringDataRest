@@ -1,13 +1,13 @@
 package com.genmymodel.shoppingcart.domain;
 
-import java.util.List;
 import java.util.Set;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.OneToOne;
+import java.util.List;
 import javax.persistence.OneToMany;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 
 
 @Entity
@@ -23,9 +23,6 @@ public class Account
 	
 	@OneToOne(optional = false)
 	private Customer customer;
-	
-	@Column(name = "IDCOLUMN")
-	private Long id;
 	
 	@Id
 	@GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
@@ -84,12 +81,6 @@ public class Account
 	public Customer getCustomer () 
 	{
 		return this.customer;	
-	}
-
-	
-	public Long getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -184,12 +175,6 @@ public class Account
 	}
 
 	
-	public void setId (Long myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setIsClosed (String myIsClosed) 
 	{
 		this.isClosed = myIsClosed;	
@@ -215,12 +200,6 @@ public class Account
 		Customer oldcustomer = this.customer;
 		this.customer = null;
 		oldcustomer.unsetAcc ();	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	

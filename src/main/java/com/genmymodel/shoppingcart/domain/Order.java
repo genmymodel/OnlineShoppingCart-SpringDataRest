@@ -2,11 +2,11 @@ package com.genmymodel.shoppingcart.domain;
 
 import com.genmymodel.shoppingcart.domain.OrderStatus;
 import javax.persistence.GeneratedValue;
-import javax.persistence.Column;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Column;
+import javax.persistence.Table;
 
 
 @Entity

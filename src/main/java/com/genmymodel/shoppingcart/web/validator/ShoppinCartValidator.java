@@ -1,9 +1,9 @@
 package com.genmymodel.shoppingcart.web.validator;
 
+import java.lang.Class;
 import org.springframework.validation.Validator;
 import org.springframework.validation.Errors;
 import java.lang.Object;
-import java.lang.Class;
 
 
 

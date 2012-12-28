@@ -1,10 +1,9 @@
 package com.genmymodel.shoppingcart.domain;
 
-import javax.persistence.ManyToOne;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
+import javax.persistence.ManyToOne;
+import javax.persistence.Id;
+import javax.persistence.Entity;
 
 
 @Entity
@@ -17,9 +16,6 @@ public class Payment
 	
 	
 	private String details;
-	
-	@Column(name = "IDCOLUMN")
-	private java.util.Date id;
 	
 	@Id
 	@GeneratedValue(strategy = javax.persistence.GenerationType.AUTO)
@@ -42,12 +38,6 @@ public class Payment
 	public String getDetails () 
 	{
 		return this.details;	
-	}
-
-	
-	public java.util.Date getId () 
-	{
-		return this.id;	
 	}
 
 	
@@ -88,12 +78,6 @@ public class Payment
 	}
 
 	
-	public void setId (java.util.Date myId) 
-	{
-		this.id = myId;	
-	}
-
-	
 	public void setId (Long myId) 
 	{
 		this.id = myId;	
@@ -125,12 +109,6 @@ public class Payment
 	public void unsetDetails () 
 	{
 		this.details = null;	
-	}
-
-	
-	public void unsetId () 
-	{
-		this.id = null;	
 	}
 
 	
